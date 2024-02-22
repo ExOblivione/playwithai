@@ -1,0 +1,530 @@
+{
+    "projectFileVersion": "2022-10-01-preview",
+    "stringIndexType": "Utf16CodeUnit",
+    "metadata": {
+        "projectKind": "Conversation",
+        "settings": {
+            "confidenceThreshold": 0,
+            "normalizeCasing": true
+        },
+        "projectName": "book",
+        "multilingual": false,
+        "description": "",
+        "language": "en-us"
+    },
+    "assets": {
+        "projectKind": "Conversation",
+        "intents": [
+            {
+                "category": "None"
+            },
+            {
+                "category": "Read"
+            },
+            {
+                "category": "Find"
+            }
+        ],
+        "entities": [
+            {
+                "category": "author",
+                "compositionSetting": "combineComponents"
+            },
+            {
+                "category": "title",
+                "compositionSetting": "combineComponents"
+            },
+            {
+                "category": "series",
+                "compositionSetting": "combineComponents"
+            },
+            {
+                "category": "genre",
+                "compositionSetting": "combineComponents"
+            }
+        ],
+        "utterances": [
+            {
+                "text": "Read aloud: Paradise Lost",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [],
+                "dataset": "Test"
+            },
+            {
+                "text": "I'm looking for a new comedy book",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [],
+                "dataset": "Test"
+            },
+            {
+                "text": "What is the genre of the Star wars books",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 25,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "What kind of genre Lovecraft writes in",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 19,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Find me a writer similar to Stephen King",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 28,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Find me similar books to Insomnia",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 25,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Find me the books written by Sztrugackij",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 29,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Which book of Virginia C Andrews has the highest rating?",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 14,
+                        "length": 18
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Read aloud: Thomas Mann - Death in Venice",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 12,
+                        "length": 11
+                    },
+                    {
+                        "category": "title",
+                        "offset": 26,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I want you to read me a Jonathan Smith story",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 24,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Let's read a Shakespeare book",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 13,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Read me the book of Gyula Verne out loud",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 20,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Read aloud: Harry Potter and the Chamber of Secrets",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 12,
+                        "length": 39
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Read this book loudly: Torture",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 23,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Read me a Lovecraft novel",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 10,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Let's read a Denise Ryan book",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 13,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who is the author of the broker and the firm",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 21,
+                        "length": 10
+                    },
+                    {
+                        "category": "title",
+                        "offset": 36,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who wrote the girl who played with fire",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 14,
+                        "length": 25
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Read a Tolkien book in the background",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 7,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Please, read the civilization game rules loud",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 17,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Read the following book loudly: Star wars",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 32,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "can you read the dune in hungarian?",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [],
+                "dataset": "Test"
+            },
+            {
+                "text": "Read this book out loud: The hobbit",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [],
+                "dataset": "Test"
+            },
+            {
+                "text": "Read me a novel of Stephen King.",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [],
+                "dataset": "Test"
+            },
+            {
+                "text": "What is the newest romantic comic book on the internet?",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [],
+                "dataset": "Test"
+            },
+            {
+                "text": "Where can I get Agatha Christie books online?",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [],
+                "dataset": "Test"
+            },
+            {
+                "text": "Who wrote the Maze Runner?",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [],
+                "dataset": "Test"
+            },
+            {
+                "text": "Based on which book the Freaky Friday movie was created?",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 24,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Read me a J K Rowling books",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 10,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I want you to read me a sweet romantic novel.",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "genre",
+                        "offset": 30,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is the second book of Game of Thrones ?",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "series",
+                        "offset": 12,
+                        "length": 6
+                    },
+                    {
+                        "category": "title",
+                        "offset": 27,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I want to read a fantasy novel of George Martin.",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "genre",
+                        "offset": 17,
+                        "length": 7
+                    },
+                    {
+                        "category": "author",
+                        "offset": 34,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I want to buy the American Psycho. Where can I buy it?",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 18,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Let's read the Dune 1",
+                "language": "en-us",
+                "intent": "Read",
+                "entities": [
+                    {
+                        "category": "title",
+                        "offset": 15,
+                        "length": 4
+                    },
+                    {
+                        "category": "series",
+                        "offset": 20,
+                        "length": 1
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is the title of the second book of the Lord of the rings?",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "series",
+                        "offset": 25,
+                        "length": 6
+                    },
+                    {
+                        "category": "title",
+                        "offset": 44,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Which is the best book of Isaac Asimov?",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 26,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Find me all the availble books of Suzanne Collins!",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "author",
+                        "offset": 34,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you find me another scifi from Kim Stanley Robinson;",
+                "language": "en-us",
+                "intent": "Find",
+                "entities": [
+                    {
+                        "category": "genre",
+                        "offset": 24,
+                        "length": 5
+                    },
+                    {
+                        "category": "author",
+                        "offset": 35,
+                        "length": 20
+                    }
+                ],
+                "dataset": "Train"
+            }
+        ]
+    }
+}
